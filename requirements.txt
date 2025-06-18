@@ -1,0 +1,6 @@
+PyQt5
+spotipy
+yt-dlp
+mutagen
+requests
+python-dotenv
