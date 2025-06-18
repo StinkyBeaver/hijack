@@ -26,6 +26,27 @@
 Clone the repo:
 
 git clone https://github.com/StinkyBeaver/hijack.git
+-cd hijack
+-python -m venv venv
+# On Windows:
+venv\Scripts\activate
+# On macOS/Linux:
+source venv/bin/activate
+pip install -r requirements.txt
+
+## Run the app:
+
+python hijack.py
+
+
+## Created and maintained by StinkyBeaver 
+GitHub: github.com/StinkyBeaver 
+
+## License
+ MIT — free for personal and commercial use. No cloud. No tracking. No bullshit.
+
+
+git clone https://github.com/StinkyBeaver/hijack.git
 cd hijack
 python -m venv venv
 # On Windows:
