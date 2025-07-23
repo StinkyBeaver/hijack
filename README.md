@@ -1,68 +1,64 @@
-# H!JACK - TAKE YOUR TRACKS BACK
+# HIJACK — Take Your Tracks Back 
 
-**H!JACK** is a streamlined desktop utility for converting Spotify playlists, albums, or tracks into high-quality MP3 files. It preserves full metadata (title, artist, album, cover art) and allows flexible organization of output files. Built with Python and PyQt5, H!JACK provides a lightweight local solution for music cataloging and backup.
+**Hijack** is a sleek desktop tool that lets you download any **Spotify playlist, album, or single** as clean, tagged MP3 files — fully offline, fully yours. Built in Python with a PyQt GUI, it's a no-nonsense way to take control of your music library.
 
 ---
 
 ## Features
 
-- Convert any **Spotify playlist, album, or single track** to MP3
-- Supports large playlists (**100+ tracks with auto-pagination**)
-- Organizes files by:
-  - Artist & Album structure (`Artist/Album/Track.mp3`)
-  - Playlist folder structure (`Playlist Name/Track.mp3`)
-- Applies full **ID3 metadata**:
+- 🎵 Download **tracks, albums, or full playlists** from Spotify
+- 🧠 Smart queue system with real-time status + progress bars
+- 📁 Organized output:
+  - `Artist/Album/Track.mp3` for albums
+  - `Playlist Name/Track.mp3` for playlists
+- 🏷️ Automatically applies full **ID3 metadata**:
   - Title
   - Artist
   - Album
-  - Embedded album artwork
-- Custom download location
-- Clean GUI with progress tracking
+  - Embedded cover art
+- 💾 Custom download folder
+- 💻 Lightweight GUI (PyQt5) — fast and responsive
 
 ---
 
-## Installation
+## 📦 Installation (From Source)
 
-Clone the repo:
-
-git clone https://github.com/StinkyBeaver/hijack.git
--cd hijack
--python -m venv venv
-# On Windows:
-venv\Scripts\activate
-# On macOS/Linux:
-source venv/bin/activate
-pip install -r requirements.txt
-
-## Run the app:
-
-python hijack.py
-
-
-## Created and maintained by StinkyBeaver 
-GitHub: github.com/StinkyBeaver 
-
-## License
- MIT — free for personal and commercial use. No cloud. No tracking. No bullshit.
-
-
+```bash
 git clone https://github.com/StinkyBeaver/hijack.git
 cd hijack
 python -m venv venv
-# On Windows:
-venv\Scripts\activate
-# On macOS/Linux:
-source venv/bin/activate
+source venv/bin/activate  # On Windows: venv\Scripts\activate
 pip install -r requirements.txt
+```
+---
 
-## Run the app:
+## 📂 .env Setup
+
+Place a .env file in the same directory as hijack.py.
+You can rename the included example env.txt to .env and fill in your Spotify API credentials:
+
+SPOTIFY_CLIENT_ID=your_client_id
+
+SPOTIFY_CLIENT_SECRET=your_client_secret
+
+---
+
+## ▶️ Running Hijack
 
 python hijack.py
 
+---
 
-## Created and maintained by StinkyBeaver 
-GitHub: github.com/StinkyBeaver 
+## 👨‍💻 Credits
 
-## License
- MIT — free for personal and commercial use. No cloud. No tracking. No bullshit.
+    Developed by StinkyBeaver
 
+    Powered by:
+
+        spotipy
+
+        yt-dlp
+
+        mutagen
+
+        PyQt5
