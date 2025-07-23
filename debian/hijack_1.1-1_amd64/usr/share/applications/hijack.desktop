@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Hijack
+Comment=Download MP3s from Spotify links
+Exec=/usr/bin/hijack
+Icon=hijack
+Terminal=false
+Type=Application
+Categories=AudioVideo;Music;

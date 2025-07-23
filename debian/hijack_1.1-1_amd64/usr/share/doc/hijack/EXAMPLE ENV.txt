@@ -1,0 +1,3 @@
+# Rename this file to .env and fill in your Spotify API credentials (https://developer.spotify.com/documentation/web-api). Delete this line before running.
+SPOTIFY_CLIENT_ID=yourclientid
+SPOTIFY_CLIENT_SECRET=yoursecret
