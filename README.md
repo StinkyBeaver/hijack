@@ -4,6 +4,35 @@
 
 ---
 
+#V1.2 UNOFFICIAL RELEASE - WIP
+
+Split everything into multiple files/modules for clarity and maintainability.
+
+    downloader.py now handles all the actual downloading and tagging logic.
+    Main UI code lives seperate
+
+Improved YouTube Search and Filtering Logic (big deal)
+
+    Replaced the original simple search query with a more refined one:
+
+    Added filters in the YouTube search query to exclude obvious “music videos,” “live,” “karaoke,” and other unwanted stuff.
+
+    Added logic to parse multiple search results and pick the best candidate by:
+
+        Checking for keywords like “official audio” or “official track” in the title.
+
+        Excluding entries with “live,” “cover,” “remix,” “instrumental,” etc.
+
+     Added comparison of YouTube video duration vs Spotify track duration (in milliseconds) to pick the closest match.
+        (This helped avoid weird 30-second clips or hour-long live concerts being downloaded mistakenly.)
+
+Error Handling & Reporting
+
+    More robust try-except around the download process, with tracebacks printed for debugging.
+
+    UI status messages updated properly on error or progress.
+
+
 ## Features
 
 - 🎵 Download **tracks, albums, or full playlists** from Spotify
